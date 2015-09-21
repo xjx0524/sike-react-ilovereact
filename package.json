@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/xjx0524/sike-react-ilovereact#readme",
   "devDependencies": {
-    "browser-sync": "^2.9.3"
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.3",
+    "postcss-cli": "^2.1.0",
+    "postcss-import": "^7.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3"
   }
 }
