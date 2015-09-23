@@ -423,6 +423,11 @@ th {
   padding: 0;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body, div, span {
     box-sizing: border-box;
     position: relative;
@@ -490,7 +495,8 @@ a:hover {
 }
 
 .section {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
