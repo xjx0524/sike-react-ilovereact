@@ -68,6 +68,8 @@ node_modules
 # IntelliJ
 /out/
 
+/tmp.js
+/tmp2.js
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
