@@ -31,7 +31,15 @@ html, body {
     position: relative;
 }
 
-#intro-section {
+#intro-background {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background: url(../img/background.jpg) center;
 }
@@ -46,6 +54,18 @@ html, body {
     background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
+#iphone-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    -webkit-transform: translate(0, -35%);
+
+        -ms-transform: translate(0, -35%);
+
+            transform: translate(0, -35%);
+}
+
 .section-b {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -54,7 +74,7 @@ html, body {
             flex-direction: row;
 }
 
-.section-b .iphone-demo, .section-b .feature-description {
+.section-b .feature-description {
     -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
             align-self: stretch;
@@ -71,6 +91,21 @@ html, body {
             justify-content: center;
 }
 
+.iphone-demo {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+}
+
+.feature-description {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 100%;
+}
+
 .img-content {
     position: absolute;
     top: 50%;
@@ -78,6 +113,23 @@ html, body {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+}
+
+.iphone-demo2, .feature-description2 {
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+            align-self: stretch;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .section-c {

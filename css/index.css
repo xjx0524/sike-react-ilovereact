@@ -21,7 +21,15 @@ html, body {
     position: relative;
 }
 
-#intro-section {
+#intro-background {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background: url(../img/background.jpg) center;
 }
@@ -35,15 +43,35 @@ html, body {
     background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
+#iphone-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transform: translate(0, -35%);
+}
+
 .section-b {
     flex-direction: row;
 }
 
-.section-b .iphone-demo, .section-b .feature-description {
+.section-b .feature-description {
     align-self: stretch;
     flex-grow: 1;
     flex-basis: 0;
     justify-content: center;
+}
+
+.iphone-demo {
+    justify-content: center;
+    height: 100%;
+}
+
+.feature-description {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 100%;
 }
 
 .img-content {
@@ -51,6 +79,13 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.iphone-demo2, .feature-description2 {
+    align-self: stretch;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
 }
 
 .section-c {
